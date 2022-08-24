@@ -1,7 +1,7 @@
-<h1>Sign Up</h1>
+<h1 class='mt-2 mb-5' >Sign Up</h1>
 
 <%= form_with model: @user, url: sign_up_path do |form| %>
-  <div class='mb-3'>
+  <div class='mb-3' >
     <%= form.label :email %>
     <%= form.text_field :email, class: 'form-control', placeholder: 'user@email.com' %>
   </div>
@@ -17,6 +17,6 @@
   </div>
 
   <div class='mb-3'>
-    <%= form.submit %>
+    <%= form.submit 'Get Started', class: 'btn btn-primary' %>
   </div>
 <%end%>
