@@ -9,7 +9,7 @@ class RegistrationsController < ApplicationController
     if @user.save
       redirect_to root_path, notice: 'Successfully created account'
     else
-      render :new, alert: 'Something went wrong!'
+      render :new
     end
   end
 
